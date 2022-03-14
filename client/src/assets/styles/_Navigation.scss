@@ -1,0 +1,14 @@
+.navigation {
+  margin-left: -33em;
+  display: flex;
+  align-items: center;
+  .nav {
+    display: flex;
+    .nav-item {
+      display: flex;
+      margin-right: 3em;
+      border-bottom: solid rgb(64, 199, 64) 3px;
+      padding: .5em
+    }
+  }
+}

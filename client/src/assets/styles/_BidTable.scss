@@ -1,0 +1,99 @@
+.bid-table {
+  margin-top: -10em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border: grey 1px solid;
+  width: 80%;
+  align-self: center;
+  color: rgb(255, 255, 255);
+  p {
+    margin: 0;
+  }
+  .bid-table-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid grey 1px;
+    padding-bottom: 1em;
+    .bid-table-header-left {
+      margin-right: 1em;
+      .ant-avatar {
+        width: 3em;
+        height: 3em;
+        img {
+          width: 3em;
+        }
+      }
+    }
+    .bid-table-header-right {
+      .user-title {
+        font-weight: 600;
+        font-size: 31px;
+      }
+      .user-username {
+        
+      }
+    }
+    
+  }
+  .bid-table-body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: solid grey 1px;
+    width: 100%;
+    .bid-table-body-left {
+      width: 50%;
+      .current-bid {
+        font-size: 14px;
+      }
+      .price-eth {
+        font-size: 27px;
+        // color: rgb(130, 255, 11);
+        color: rgb(85, 441, 98);
+        font-weight: bold;
+      }
+      .price-dollar {
+        
+      }
+    }
+    .bid-table-body-right {
+      width: 50%;
+      padding-left: 3em;
+      border-left: 1px grey solid;
+      .remaining-time {
+
+      }
+      .time {
+        font-size: 27px;
+        // color: rgb(130, 255, 11);
+        color: rgb(85, 441, 98);
+        font-weight: bold;
+      }
+      .hours-mins-secs {
+        font-size: 14px;
+      }
+    }
+  }
+  .bid-table-footer {
+    display: flex;
+    padding-top: 1em;
+    width: 100%;
+    align-items: center;
+    .bid-table-footer-left {
+      width: 50%;
+    }
+    .bid-table-footer-right {
+      // margin-left: -2em;
+      width: 50%;
+      padding-left: 3em;
+      p {
+        // color: rgb(130, 255, 11);
+        color: rgb(85, 441, 98);
+        font-weight: bold;
+      }
+    }
+  }
+}

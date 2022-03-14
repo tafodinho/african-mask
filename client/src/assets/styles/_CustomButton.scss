@@ -1,0 +1,33 @@
+.custom-button {
+  button {
+    border-radius: .5em;
+    padding: .7em 2em .7em 2em;
+    height: unset;
+    font-size: 15px;
+    font-weight: 550;
+    &.green {
+      // background: rgb(130, 255, 11);
+      // border: rgb(130, 255, 11);
+      background: rgb(85, 441, 98);
+      border: rgb(85, 441, 98);
+      color: rgb(16, 33, 22);
+      &:hover {
+        background: rgb(74, 199, 64);
+        border: rgb(74, 199, 64);
+        color: rgb(16, 33, 22);
+      }
+    }
+    &.dark {
+      background: rgb(15, 15, 15);
+      border: rgb(15, 15, 15);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      padding: .7em 2.5em .7em 2.5em;
+      &:hover {
+        background: rgb(17, 17, 17);
+        border: rgb(17, 17, 17);
+        color: rgb(250, 250, 250);
+      }
+    }
+  }
+}
