@@ -1,0 +1,45 @@
+.art-display {
+  margin-top: 5em;
+  .art-display-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    .art-display-title {
+      margin: 0;
+      display: flex;
+      font-weight: 600;
+      font-size: 26px;
+    }
+    .art-display-nav {
+      margin-right: 2em;
+      span {
+        width: 2em;
+        font-weight: 600;
+        margin-right: 3em;
+        svg {
+          width: 2em;
+          height: 1.5em;
+        }
+      }
+    }
+  }
+  .slider {
+    .ant-row {
+      flex-flow: unset;
+      flex-flow: row;
+      width: 100%;
+      overflow: scroll;
+      white-space: nowrap;
+      &{
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-x: scroll; 
+      }
+      
+      &::-webkit-scrollbar {
+          display: none; /* for Chrome, Safari, and Opera */
+      }
+    }
+  }
+}

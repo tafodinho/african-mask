@@ -7,4 +7,10 @@
   margin-bottom: 2em;
   top: 2em;
   z-index: 2;
+  transition: .2s;
+  &.background {
+    background-image: url('../images/background2.jpeg');
+    color: white;
+    top: 0;
+  }
 }

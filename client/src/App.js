@@ -6,6 +6,7 @@ import getWeb3 from "./getWeb3";
 
 class App extends Component {
   state = { storageValue: 0, web3: null, accounts: null, contract: null };
+  leftPaneRef = React.createRef();
 
   componentDidMount = async () => {
     // try {
@@ -54,8 +55,8 @@ class App extends Component {
     // }
     return (
       <div className="App">
-        <Header />
-        <Home />
+        <Header leftPaneRef={this.leftPaneRef} />
+        <Home leftPaneRef={this.leftPaneRef} />
       </div>
     );
   }

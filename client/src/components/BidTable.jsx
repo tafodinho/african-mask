@@ -35,7 +35,7 @@ export function BidTable({}) {
           <CustomButton type="green">Place a Bid</CustomButton>
         </div>
         <div className="bid-table-footer-right">
-          <p classNam="view-artwork">View Artwork</p>
+          <p className="view-artwork">View Artwork</p>
         </div>
       </div>
     </div>
