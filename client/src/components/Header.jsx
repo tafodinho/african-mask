@@ -5,7 +5,11 @@ import { AccountNav } from './AccountNav';
 // type Props = {
   
 // };
-export const Header = ({leftPaneRef}) => {
+export const Header = ({
+  leftPaneRef, 
+  initWallet,
+  isLoggedIn
+}) => {
   const [navbar, setNavbar] = React.useState();
 
   const changeBackground = () => {
@@ -27,7 +31,7 @@ export const Header = ({leftPaneRef}) => {
     <div className={navbar ? "header background" : "header"}>
       <Logo />
       <Navigation />
-      <AccountNav />
+      <AccountNav initWallet={initWallet} isLoggedIn={isLoggedIn} />
     </div>
   );
 };

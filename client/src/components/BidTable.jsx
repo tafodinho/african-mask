@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Avatar, Image } from 'antd';
-import { CustomBottun, CustomButton } from './/CustumButton';
+import { CustomButton } from './/CustumButton';
 // type Props = {
   
 // };
-export function BidTable({}) {
+export function BidTable({runExample, storageValue}) {
   return (
     <div className="bid-table">
       <div className="bid-table-header">
@@ -19,7 +19,7 @@ export function BidTable({}) {
       <div className="bid-table-body">
         <div className="bid-table-body-left">
           <p className="current-bid">Current Bid</p>
-          <p className="price-eth">6.00 ETH</p>
+          <p className="price-eth">{storageValue}.00 ETH</p>
           <p className="price-dollar">$12.459.47</p>
         </div>
         <div className="bid-table-body-right">
@@ -32,7 +32,7 @@ export function BidTable({}) {
       </div>
       <div className="bid-table-footer">
         <div className="bid-table-footer-left">
-          <CustomButton type="green">Place a Bid</CustomButton>
+          <CustomButton type="green" onClickEvent={runExample}>Place a Bid</CustomButton>
         </div>
         <div className="bid-table-footer-right">
           <p className="view-artwork">View Artwork</p>

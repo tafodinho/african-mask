@@ -17,7 +17,7 @@ import { ImageSlider } from '../components/ImageSlider';
 // type State = {
   
 // };
-export const Home = ({leftPaneRef}) => {
+export const Home = ({leftPaneRef, runExample, storageValue}) => {
     return (
       <div className="homepage">
         <Row className="home-row">
@@ -31,7 +31,7 @@ export const Home = ({leftPaneRef}) => {
             <div className="bid-image-container">
               <img src={BidImage} style={{ width: 500 }} />
             </div>
-            <BidTable />
+            <BidTable runExample={runExample} storageValue={storageValue} />
           </Col>
         </Row>
       </div>

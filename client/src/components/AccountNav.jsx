@@ -3,10 +3,13 @@ import { CustomButton } from './CustumButton';
 // type Props = {
   
 // };
-export const AccountNav = ({}) => {
+export const AccountNav = ({
+  initWallet,
+  isLoggedIn
+}) => {
   return (
     <div className="account-nav">
-      <CustomButton type="green">Log In</CustomButton>
+      <CustomButton type="green" onClickEvent={initWallet}>{isLoggedIn ? "Remove Wallet" : "Connect Wallet"}</CustomButton>
     </div>
   );
 };

@@ -4,18 +4,20 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@openzeppelin/contracts": "^4.5.0",
     "antd": "^4.19.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "3.2.0",
     "sass": "^1.49.9",
+    "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject", 
+    "eject": "react-scripts eject",
     "deploy": "aws s3 sync build/ s3://tafang-site --acl public-read"
   },
   "eslintConfig": {
